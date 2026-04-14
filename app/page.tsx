@@ -35,9 +35,9 @@ export default function Home() {
       <section className="relative h-screen w-full">
 
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero.png')" }}
-        />
+  className="absolute inset-0 bg-contain md:bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/hero.png')" }}
+/>
 
         <div className="absolute inset-0 bg-[#0A1931]/70 backdrop-blur-sm"></div>
 
