@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* BODY ONLY — DO NOT RESET EVERYTHING */
+body {
+  background-color: #F6FAFD;
+  color: #0A1931;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* LOGO MARQUEE ANIMATION */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* OPTIONAL: SMOOTH IMAGE HOVER */
+img {
+  transition: all 0.3s ease;
+}
+
+/* LOGO FADE EDGES */
+.fade-mask {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* PAUSE ON HOVER */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
