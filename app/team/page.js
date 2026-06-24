@@ -26,6 +26,12 @@ export default function Team() {
       email: "cecilia.aria.contact@gmail.com",
       facebook: "https://www.facebook.com/profile.php?id=61576295613231",
     },
+    {
+      name: "Hutchins David",
+      image: "/hutchins.png",
+      email: "hutchinsdavide@gmail.com",
+      facebook: null,
+    }
   ];
 
   return (
